@@ -1,11 +1,14 @@
 const myLibrary = [];
+let newBookBtn = document.getElementById("newBookBtn");
+let addBook = document.getElementById("addBook");
+let allInputs = document.querySelectorAll("#newBookForm input");
 
 function Book(title, author, pages, alreadyRead){
     this.title = title;
     this.author = author;
     this.pages = pages;
     this.alreadyRead = alreadyRead;
-}
+};
 
 function addBookToLibrary(){
     let title = document.getElementById("title").value;
@@ -14,20 +17,32 @@ function addBookToLibrary(){
     let alreadyRead = document.getElementById("alreadyRead").value;
     let newBook = new Book(title, author, pages, alreadyRead);
 
-    console.log(newBook);
+    myLibrary.push(newBook);
+
+    function displayNewBook(){
+        const displayArea = document.getElementById("displayArea")
+
+        myLibrary.forEach()
+
 }
 
-let newBookBtn = document.getElementById("newBookBtn")
+    console.log(newBook);
+};
+
 newBookBtn.addEventListener("click", function(){
     
     let newBookForm = document.getElementById("newBookForm")
     newBookForm.style.display = "grid";
-})
+    addBook.style.display ="grid";
+});
 
-document.getElementById("newBookForm").addEventListener("submit", function(){
-    event.defaultPrevented;
-    
+addBook.addEventListener("click", function(){    
     addBookToLibrary();
-})
+    allInputs.forEach(input =>{
+        input.value = "";           //clears input 
+    
+    let checkbox = document.getElementById("newBookForm").querySelector("input[type='checkbox']");
+    checkbox.checked = false;
+    })
+});
 
-console.log(myLibrary)

@@ -32,12 +32,14 @@
     text-align: center;
 }
 
-#newBookForm input[type=submit] {
+#addBook {
 
+    justify-self: center;
     border-radius: 5px;
     width: 100%;
     background-color: blue;
     cursor: pointer;
     color: white;
     box-shadow: 2px 2px 4px grey;
+    width: 15vw;
 }
