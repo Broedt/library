@@ -1,0 +1,43 @@
+#newBookBtn {
+    display: flex;
+    justify-self: center;
+    margin-top: 50px;
+    font-size: 60px;
+    border-radius: 20px;
+    background-color: rgb(3, 163, 3);
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 2px 50px rgb(74, 74, 74);
+}
+#newBookForm {
+    width: 30vw;
+    grid-auto-flow: row;
+    justify-self: center;
+    justify-items: center;
+    gap: 10px;
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid black;
+}
+#newBookForm input {
+    width: 80%;
+    height: 30px;
+    border: 1px solid rgb(206, 206, 206);
+}
+#newBookForm label {
+    padding: 10px;
+    width: 20%;
+    text-align: center;
+}
+
+#newBookForm input[type=submit] {
+
+    border-radius: 5px;
+    width: 100%;
+    background-color: blue;
+    cursor: pointer;
+    color: white;
+    box-shadow: 2px 2px 4px grey;
+}
