@@ -1,15 +1,24 @@
+body{
+    background-image: url(./images/modern-bookstore-showcasing-rows-vibrant-books.jpg);
+}
+
+#welcome{
+    text-align: center;
+    color: whitesmoke;
+}
+
 #newBookBtn {
     display: flex;
     justify-self: center;
-    margin-top: 50px;
-    font-size: 60px;
+    margin-top: 30px;
+    font-size: 40px;
     border-radius: 20px;
-    background-color: rgb(3, 163, 3);
+    background-color: rgba(3, 163, 3, 0.742);
     padding: 10px;
     font-weight: bold;
-    color: white;
+    color: whitesmoke;
     cursor: pointer;
-    box-shadow: 2px 2px 50px rgb(74, 74, 74);
+    box-shadow: 2px 2px 50px rgb(243, 241, 241);
 }
 #newBookForm {
     width: 30vw;
@@ -19,12 +28,17 @@
     gap: 10px;
     margin: 50px;
     padding: 20px;
-    border: 1px solid black;
+    border: 1px solid whitesmoke;
+    background-color: rgb(206, 206, 206, 0.3) ;
+    
+    
 }
 #newBookForm input {
     width: 80%;
     height: 30px;
     border: 1px solid rgb(206, 206, 206);
+
+    
 }
 #newBookForm label {
     padding: 10px;
@@ -39,7 +53,48 @@
     width: 100%;
     background-color: blue;
     cursor: pointer;
-    color: white;
+    color: whitesmoke;
     box-shadow: 2px 2px 4px grey;
     width: 15vw;
+    font-size: 20px;
+}
+
+#displayArea{
+    
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    gap: 20px;
+
+}
+.bookCard {
+    border: 1px solid black;
+    width: 1fr;
+    height: 1fr;
+    display: grid;
+    text-align: center;
+    background-color: rgb(206, 206, 206, 0.3) ;
+    color: whitesmoke;
+   
+}
+
+.bookCard .title{
+    font-size: 30px;
+}
+
+.removeBookBtn{
+    display: flex;
+    border-radius: 5px;
+    font-size: 20px;
+    width: fit-content;
+    justify-self: center;
+    margin-bottom: 10px;
+    background-color: rgb(255, 0, 0, 0.5);
+}
+
+.toggleReadStatus{
+    background-color: grey;
+    display: flex;
+    width: fit-content;
+    justify-self: center;
+    border-radius: 5px;
 }
