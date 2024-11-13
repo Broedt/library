@@ -10,7 +10,7 @@ body{
 #newBookBtn {
     display: flex;
     justify-self: center;
-    margin-top: 30px;
+    margin: 30px;
     font-size: 40px;
     border-radius: 20px;
     background-color: rgba(3, 163, 3, 0.742);
@@ -26,19 +26,27 @@ body{
     justify-self: center;
     justify-items: center;
     gap: 10px;
-    margin: 50px;
+    margin: 30px;
     padding: 20px;
     border: 1px solid whitesmoke;
     background-color: rgb(206, 206, 206, 0.3) ;
+    color: whitesmoke;
     
     
 }
 #newBookForm input {
     width: 80%;
-    height: 30px;
+    height: 20px;
     border: 1px solid rgb(206, 206, 206);
 
     
+}
+
+#newBookForm input[type="submit"]{
+    background-color: blue;
+    color: white;
+    width: 30%;
+    border-radius: 5px;
 }
 #newBookForm label {
     padding: 10px;
@@ -46,18 +54,7 @@ body{
     text-align: center;
 }
 
-#addBook {
 
-    justify-self: center;
-    border-radius: 5px;
-    width: 100%;
-    background-color: blue;
-    cursor: pointer;
-    color: whitesmoke;
-    box-shadow: 2px 2px 4px grey;
-    width: 15vw;
-    font-size: 20px;
-}
 
 #displayArea{
     
@@ -75,26 +72,33 @@ body{
     background-color: rgb(206, 206, 206, 0.3) ;
     color: whitesmoke;
    
+   
 }
 
 .bookCard .title{
     font-size: 30px;
+    
 }
 
-.removeBookBtn{
+.removeBookBtn, .toggleReadStatus{
     display: flex;
     border-radius: 5px;
-    font-size: 20px;
-    width: fit-content;
+    font-size: 15px;
+    width: 50%;
     justify-self: center;
-    margin-bottom: 10px;
+    justify-content: center;
+    margin: 10px;
+    fill: whitesmoke;
     background-color: rgb(255, 0, 0, 0.5);
+
 }
 
 .toggleReadStatus{
     background-color: grey;
+    color: whitesmoke;
+}
+
+.cardBtns{
     display: flex;
-    width: fit-content;
-    justify-self: center;
-    border-radius: 5px;
+    justify-content: center;
 }
