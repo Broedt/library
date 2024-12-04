@@ -4,11 +4,12 @@ let addBook = document.getElementById("addBook");
 let allInputs = document.querySelectorAll("#newBookForm input");
 let newBookForm = document.getElementById("newBookForm")
 
-function Book(title, author, pages, alreadyRead){
+class Book{
+    constructor(title, author, pages, alreadyRead){
     this.title = title;
     this.author = author;
     this.pages = pages;
-    this.alreadyRead = alreadyRead;
+    this.alreadyRead = alreadyRead;}
 };
 
 Book.prototype.toggleReadStatus = function(){
